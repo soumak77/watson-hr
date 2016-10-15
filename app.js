@@ -27,7 +27,7 @@ require('./config/express')(app);
 
 // Alchemy Language
 var alchemyService = new watson.AlchemyLanguageV1({
-  api_key: '5b18f579f90d11e07c9c1187174fd78fc1cf5984'
+  api_key: '95ed8246b8d12670d230389b06d2ded65c8dea4c'
 });
 
 // Visual Recognition
@@ -65,8 +65,8 @@ tradeoffAnalyticsConfig.setupToken(app, {//for dev purposes. in bluemix it is ta
 
 // Personality Insights
 var personalityInsights = watson.personality_insights({
-  "password": "fNxMRrYZ5Hxq",
-  "username": "4c239216-4acf-40c6-8484-eb79c2fd22b8",
+  "password": "I7UwCX8JVqLt",
+  "username": "ea595884-31ba-47c3-ac79-ea4c104dc1ef",
   "version": "v2",
   "headers": {
     "X-Watson-Learning-Opt-Out": 1
