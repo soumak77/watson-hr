@@ -65,8 +65,8 @@ tradeoffAnalyticsConfig.setupToken(app, {//for dev purposes. in bluemix it is ta
 
 // Personality Insights
 var personalityInsights = watson.personality_insights({
-  "password": "8AROxeTJHZCT",
-  "username": "51090438-d608-4ad2-be5d-01fbe46bb0c4",
+  "password": "fNxMRrYZ5Hxq",
+  "username": "4c239216-4acf-40c6-8484-eb79c2fd22b8",
   "version": "v2",
   "headers": {
     "X-Watson-Learning-Opt-Out": 1
