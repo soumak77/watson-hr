@@ -1,0 +1,51 @@
+---
+name: reporting
+url: /reporting
+controller: ReportingController as reporting
+---
+<div class="grid-block vertical" ng-show="reporting.authLoaded">
+  <div class="grid-content shrink text-center">
+    <h1>Click any button</h1>
+  </div>
+  <div class="grid-block wrap shrink">
+    <div class="grid-content small-6 medium-3">
+      <a class="button expand info" ng-click="reporting.buttonClicked('a')">A</a>
+    </div>
+    <div class="grid-content small-6 medium-3">
+      <a class="button expand alert" ng-click="reporting.buttonClicked('b')">B</a>
+    </div>
+    <div class="grid-content small-6 medium-3">
+      <a class="button expand warning" ng-click="reporting.buttonClicked('c')">C</a>
+    </div>
+    <div class="grid-content small-6 medium-3">
+      <a class="button expand success" ng-click="reporting.buttonClicked('d')">D</a>
+    </div>
+  </div>
+  <div class="grid-content shrink text-center">
+    <h2><i>Metrics</i></h2>
+  </div>
+  <div class="grid-block shrink wrap text-center">
+    <div class="grid-content small-12 medium-4">
+      <h4>Total Clicks</h4>
+      <h2 ng-show="reporting.totalClicks !== null">{{ reporting.totalClicks }}</h2>
+    </div>
+    <div class="grid-content small-12 medium-4">
+      <h4>Total Users</h4>
+      <h2 ng-show="reporting.totalUsers !== null">{{ reporting.totalUsers }}</h2>
+    </div>
+    <div class="grid-content small-12 medium-4">
+      <h4>Last Clicked</h4>
+      <h2 ng-show="reporting.lastClicked !== null">{{ reporting.lastClicked | date:'medium' }}</h2>
+    </div>
+  </div>
+  <div class="grid-content shrink text-center">
+    <h2><i>Charts</i></h2>
+  </div>
+  <div class="grid-block shrink wrap">
+    <div class="grid-content small-12 collapse noscroll"><div google-chart chart="reporting.piechart" style="height:400px; width:100%;"></div></div>
+    <div class="grid-content small-12 large-6 collapse noscroll"><div google-chart chart="reporting.linecharts.minute" style="height:400px; width:100%;"></div></div>
+    <div class="grid-content small-12 large-6 collapse noscroll"><div google-chart chart="reporting.linecharts.hour" style="height:400px; width:100%;"></div></div>
+    <div class="grid-content small-12 large-6 collapse noscroll"><div google-chart chart="reporting.linecharts.day" style="height:400px; width:100%;"></div></div>
+    <div class="grid-content small-12 large-6 collapse noscroll"><div google-chart chart="reporting.linecharts.week" style="height:400px; width:100%;"></div></div>
+  </div>
+</div>

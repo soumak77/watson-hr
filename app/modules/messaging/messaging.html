@@ -1,0 +1,19 @@
+---
+name: messaging
+url: /messaging
+controller: MessagingController as messaging
+animationIn: slideInRight
+animationOut: slideOutLeft
+---
+<div class="grid-container" style="padding: 0 1rem;">
+  <h2>Leave a Message!</h2>
+  <ba-spin-kit ng-if="!messaging.messages.$resolved" loader="wave" class="primary large"></ba-spin-kit>
+  <div ng-if="messaging.messages.$resolved">
+    <strong ng-show="messaging.messages.length === 0">no messages yet</strong>
+    <textarea ng-model="newmessage"></textarea>
+    <a class="button" ng-click="messaging.submitMessage(newmessage)">Save</a>
+  </div>
+  <div class="slideInLeft stagger" ng-show="messaging.showMessages" ng-repeat="message in messaging.messages">
+    <blockquote><pre>{{ message.$value }}</pre></blockquote>
+  </div>
+</div>
