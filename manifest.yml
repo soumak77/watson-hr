@@ -19,7 +19,7 @@ declared-services:
     label: tradeoff_analytics
     plan: standard
 applications:
-- name: watson-human-resources2
+- name: watson-human-resources4
   command: npm start
   memory: 2GB
   services:
