@@ -23,3 +23,55 @@ textarea.profile-resume {
     min-height: 300px;
   }
 }
+
+div.home-container {
+  background: url('/images/homepage.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+
+  h1 {
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 1rem;
+  }
+
+  h4 {
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 3rem;
+  }
+
+  a.button.employer {
+    position: absolute;
+    bottom: 10%;
+
+    @include breakpoint(medium) {
+      right: 10%;
+      bottom: 25%;
+    }
+
+    @include breakpoint(large) {
+      right: 25%;
+      bottom: 25%;
+    }
+  }
+
+  a.button.applicant {
+    position: absolute;
+    bottom: 25%;
+
+    @include breakpoint(medium) {
+      left: 10%;
+      bottom: 25%;
+    }
+    @include breakpoint(large) {
+      left: 25%;
+      bottom: 25%;
+    }
+  }
+}

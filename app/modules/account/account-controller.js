@@ -1,10 +1,12 @@
 export default class AccountController {
-  constructor($firebaseAuthService, $log, $state, BaseAppsApi) {
+  constructor($firebaseAuthService, $firebaseRef, $log, $state, $stateParams, BaseAppsApi) {
+    this.type = $stateParams.type;
     this.authService = $firebaseAuthService;
     this.authLoading = false;
     this.$log = $log;
     this.$state = $state;
     this.BaseAppsApi = BaseAppsApi;
+    this.$firebaseRef = $firebaseRef;
     return this;
   }
 
@@ -17,7 +19,12 @@ export default class AccountController {
         this.authLoading = true;
         return this.authService.$signInAnonymously()
           .then(() => {
-            this.$state.go('profile', {id: this.authService.$getAuth().uid});
+            this.$firebaseRef.default.child('profiles').child(this.authService.$getAuth().uid).child('type').set(this.type);
+            if (this.type === 'applicant') {
+              this.$state.go('profile', {id: this.authService.$getAuth().uid});
+            } else {
+              this.$state.go('applicants');
+            }
           })
           .catch((error) => {
             $log.log('Login Failed!', error);
@@ -37,7 +44,12 @@ export default class AccountController {
         this.authLoading = true;
         return this.authService.$signInWithPopup(provider)
           .then(() => {
-            this.$state.go('profile', {id: this.authService.$getAuth().uid});
+            this.$firebaseRef.default.child('profiles').child(this.authService.$getAuth().uid).child('type').set(this.type);
+            if (this.type === 'applicant') {
+              this.$state.go('profile', {id: this.authService.$getAuth().uid});
+            } else {
+              this.$state.go('applicants');
+            }
           })
           .catch((error) => {
             $log.log('Login Failed!', error);
@@ -69,4 +81,4 @@ export default class AccountController {
   }
 }
 
-AccountController.$inject = ['$firebaseAuthService', '$log', '$state', 'BaseAppsApi'];
+AccountController.$inject = ['$firebaseAuthService', '$firebaseRef', '$log', '$state', '$stateParams', 'BaseAppsApi'];

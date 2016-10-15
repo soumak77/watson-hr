@@ -12110,5 +12110,54 @@ textarea.profile-resume {
     textarea.profile-resume {
       min-height: 300px; } }
 
+/* line 27, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
+div.home-container {
+  background: url("/images/homepage.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%; }
+  /* line 35, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
+  div.home-container h1 {
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 1rem; }
+  /* line 42, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
+  div.home-container h4 {
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 3rem; }
+  /* line 49, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
+  div.home-container a.button.employer {
+    position: absolute;
+    bottom: 10%; }
+    @media only screen and (min-width: 40em) {
+      /* line 49, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
+      div.home-container a.button.employer {
+        right: 10%;
+        bottom: 25%; } }
+    @media only screen and (min-width: 75em) {
+      /* line 49, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
+      div.home-container a.button.employer {
+        right: 25%;
+        bottom: 25%; } }
+  /* line 64, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
+  div.home-container a.button.applicant {
+    position: absolute;
+    bottom: 25%; }
+    @media only screen and (min-width: 40em) {
+      /* line 64, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
+      div.home-container a.button.applicant {
+        left: 10%;
+        bottom: 25%; } }
+    @media only screen and (min-width: 75em) {
+      /* line 64, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
+      div.home-container a.button.applicant {
+        left: 25%;
+        bottom: 25%; } }
+
 
 /*# sourceMappingURL=app.css.map*/
