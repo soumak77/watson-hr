@@ -1,5 +1,5 @@
 export default class ProfileController {
-  constructor($firebaseRef, $firebaseObject, $firebaseArray, $timeout, $stateParams, $q, TaxonomyService) {
+  constructor($firebaseRef, $firebaseObject, $timeout, $stateParams, $q, TaxonomyService) {
     this.id = $stateParams.id;
     this.dataRef = $firebaseRef.default.child('profiles').child(this.id);
     this.resume = "Hi I'm the shit! Hire me! I know all about finances and shit!  Like bills, I got that!  Taxes, nah fuck the government.";
@@ -24,4 +24,4 @@ export default class ProfileController {
   }
 }
 
-ProfileController.$inject = ['$firebaseRef', '$firebaseObject', '$firebaseArray', '$timeout', '$stateParams', '$q', 'TaxonomyService'];
+ProfileController.$inject = ['$firebaseRef', '$firebaseObject', '$timeout', '$stateParams', '$q', 'TaxonomyService'];

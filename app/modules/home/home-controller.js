@@ -1,7 +1,7 @@
 export default class HomeController {
-  constructor($firebaseRef, $firebaseObject, $firebaseArray) {
+  constructor() {
     return this;
   }
 }
 
-HomeController.$inject = ['$firebaseRef', '$firebaseObject', '$firebaseArray'];
+HomeController.$inject = [];
