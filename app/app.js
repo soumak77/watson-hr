@@ -4,6 +4,7 @@ import angular from 'angular';
 import 'angular-base-apps';
 import 'angular-google-chart/ng-google-chart';
 import 'angular-ui-router';
+import 'angular-resource';
 
 // Firebase Configuration
 import firebase from 'firebase';
@@ -41,6 +42,7 @@ const AppRun = () => {
 angular.module('application', [
   'ui.router',
   'ngAnimate',
+  'ngResource',
 
   // firebase
   'firebase',

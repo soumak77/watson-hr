@@ -12087,5 +12087,9 @@ blockquote p {
 .float-none {
   float: none; }
 
+/* line 4, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
+span.label {
+  margin-right: 0.5rem; }
+
 
 /*# sourceMappingURL=app.css.map*/
