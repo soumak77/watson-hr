@@ -1,5 +1,5 @@
 export default class ProfileController {
-  constructor($firebaseRef, $firebaseObject, $timeout, $stateParams, $q, AlchemyTaxonomyService, AlchemyKeywordService, PersonalityInsightsService) {
+  constructor($firebaseRef, $firebaseObject, $timeout, $stateParams, $q, AlchemyTaxonomyService, AlchemyKeywordService, PersonalityInsightsService, VisualRecognitionService) {
     this.id = $stateParams.id;
     this.dataRef = $firebaseRef.default.child('profiles').child(this.id);
     this.resume = `
@@ -20,10 +20,12 @@ Thank you for your time and consideration.
 Sincerely,
 Isabella Davis`
     ;
+    this.imagePath = 'images/profiles/1.jpeg';
     this.resumeAnalysis = $firebaseObject(this.dataRef.child('resume'));
     this.$AlchemyTaxonomyService = AlchemyTaxonomyService;
     this.$AlchemyKeywordService = AlchemyKeywordService;
     this.$PersonalityInsightsService = PersonalityInsightsService;
+    this.$VisualRecognitionService = VisualRecognitionService;
     this.$q = $q;
     this.$timeout = $timeout;
     return this;
@@ -46,10 +48,15 @@ Isabella Davis`
       text: this.resume
     }).$promise);
 
+    promises.push(this.$VisualRecognitionService.save({}, {
+      url: this.imagePath
+    }).$promise);
+
     return this.$q.all(promises).then((data) => {
       this.resumeAnalysis.taxonomy = data[0].taxonomy;
       this.resumeAnalysis.keywords = data[1].keywords;
       this.resumeAnalysis.personality = data[2].tree;
+      this.resumeAnalysis.visual = data[3];
       this.resumeAnalysis.$save();
     });
   }
@@ -59,4 +66,4 @@ Isabella Davis`
   }
 }
 
-ProfileController.$inject = ['$firebaseRef', '$firebaseObject', '$timeout', '$stateParams', '$q', 'AlchemyTaxonomyService', 'AlchemyKeywordService', 'PersonalityInsightsService'];
+ProfileController.$inject = ['$firebaseRef', '$firebaseObject', '$timeout', '$stateParams', '$q', 'AlchemyTaxonomyService', 'AlchemyKeywordService', 'PersonalityInsightsService', 'VisualRecognitionService'];

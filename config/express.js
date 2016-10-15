@@ -21,6 +21,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
 var morgan = require('morgan');
+var multer = require('multer');
 
 module.exports = function(app) {
   // Configure Express
@@ -32,6 +33,21 @@ module.exports = function(app) {
 
   // Setup static public directory
   app.use(express.static(path.join(__dirname, '..', 'public')));
+
+  // Setup the upload mechanism
+  var storage = multer.diskStorage({
+    destination: function(req, file, cb) {
+      cb(null, os.tmpdir());
+    },
+    filename: function(req, file, cb) {
+      cb(null, Date.now() + '-' + file.originalname);
+    }
+  });
+
+  var upload = multer({
+    storage: storage
+  });
+  app.upload = upload;
 
   // Only loaded when SECURE_EXPRESS is `true`
   if (process.env.VCAP_APPLICATION) {

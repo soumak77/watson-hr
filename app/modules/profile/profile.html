@@ -4,15 +4,17 @@ url: /profile/:id
 controller: ProfileController as profile
 ---
 <div class="grid-block vertical" style="padding: 0 1rem;">
-  <div class="grid-content shrink">
-    <h2 class="text-center">Isabella Davis</h2>
+  <div class="grid-content shrink text-center">
+    <img class="profile-image" ng-src="{{ profile.imagePath }}"></img>
+    <h2>Isabella Davis</h2>
+    <span>{{ profile.resumeAnalysis.visual.images[0].faces[0].gender.gender.toLowerCase() | ucfirst }} {{ profile.resumeAnalysis.visual.images[0].faces[0].age.min }} - {{ profile.resumeAnalysis.visual.images[0].faces[0].age.max }}</span>
   </div>
   <div class="grid-content shrink">
     <h4>Resume</h4>
     <textarea class="profile-resume" ng-model="profile.resume"></textarea>
     <a class="button" ng-click="profile.analyzeResume()">Analyze</a>
   </div>
-  <div class="grid-block vertical">
+  <div class="grid-block vertical shrink">
     <div class="grid-content shrink">
       <h6>Taxonomy</h6>
       <span class="label" ng-class="taxonomy.score > 0.8 ? 'success' : (taxonomy.score > 0.5 ? 'warning' : 'alert')"
@@ -26,12 +28,12 @@ controller: ProfileController as profile
     <div class="grid-content shrink">
       <h4>Personal Insights</h4>
     </div>
-    <div class="grid-block small-up-1 medium-up-3">
-      <div class="grid-content" ng-repeat="personality in profile.resumeAnalysis.personality.children">
+    <div class="grid-block small-up-1 medium-up-3 shrink">
+      <div class="grid-content noscroll" ng-repeat="personality in profile.resumeAnalysis.personality.children">
         <h6>{{ personality.id | ucfirst }}</h6>
         <div class="clearfix" ng-repeat="child in personality.children[0].children">
           <strong class="float-left">{{ child.name }}</strong>
-          <span class="float-right">{{ child.percentage | number:2 }} %</span>
+          <span class="float-right">{{ (child.percentage * 100) | number:0 }} %</span>
         </div>
       </div>
     </div>

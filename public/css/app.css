@@ -12091,5 +12091,16 @@ blockquote p {
 span.label {
   margin-right: 0.5rem; }
 
+/* line 8, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
+img.profile-image {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px; }
+  @media only screen and (min-width: 40em) {
+    /* line 8, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
+    img.profile-image {
+      width: 200px;
+      height: 200px; } }
+
 
 /*# sourceMappingURL=app.css.map*/
