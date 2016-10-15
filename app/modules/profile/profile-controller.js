@@ -48,6 +48,11 @@ export default class ProfileController {
     }
   }
 
+  saveResume() {
+    this.resumeAnalysis.$save();
+    this.analyzeResume();
+  }
+
   analyzeResume() {
     var promises = [];
 
