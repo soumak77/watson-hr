@@ -73,7 +73,7 @@ var personalityInsights = watson.personality_insights({
   }
 });
 
-app.post('/api/:method', function(req, res, next) {
+app.post('/alchemy/:method', function(req, res, next) {
   var method = req.params.method;
   if (typeof alchemyService[method] === 'function') {
     alchemyService[method](req.body, function(err, response) {

@@ -1,5 +1,5 @@
 export default class ProfileController {
-  constructor($firebaseRef, $firebaseObject, $timeout, $stateParams, $q, TaxonomyService, PersonalityInsightsService) {
+  constructor($firebaseRef, $firebaseObject, $timeout, $stateParams, $q, AlchemyTaxonomyService, AlchemyKeywordService, PersonalityInsightsService) {
     this.id = $stateParams.id;
     this.dataRef = $firebaseRef.default.child('profiles').child(this.id);
     this.resume = `
@@ -21,7 +21,8 @@ Sincerely,
 Isabella Davis`
     ;
     this.resumeAnalysis = $firebaseObject(this.dataRef.child('resume'));
-    this.$TaxonomyService = TaxonomyService;
+    this.$AlchemyTaxonomyService = AlchemyTaxonomyService;
+    this.$AlchemyKeywordService = AlchemyKeywordService;
     this.$PersonalityInsightsService = PersonalityInsightsService;
     this.$q = $q;
     this.$timeout = $timeout;
@@ -31,19 +32,24 @@ Isabella Davis`
   analyzeResume() {
     var promises = [];
 
-    promises.push(this.$TaxonomyService.save({}, {
+    promises.push(this.$AlchemyTaxonomyService.save({}, {
       text: this.resume
-    }).$promise.then((results) => {
-      this.resumeAnalysis.taxonomy = results.taxonomy;
-    }));
+    }).$promise);
+
+    promises.push(this.$AlchemyKeywordService.save({}, {
+      text: this.resume,
+      sentiment: 1,
+      emotion: 1
+    }).$promise);
 
     promises.push(this.$PersonalityInsightsService.save({}, {
       text: this.resume
-    }).$promise.then((results) => {
-      this.resumeAnalysis.personality = results.tree;
-    }));
+    }).$promise);
 
-    return this.$q.all(promises).then(() => {
+    return this.$q.all(promises).then((data) => {
+      this.resumeAnalysis.taxonomy = data[0].taxonomy;
+      this.resumeAnalysis.keywords = data[1].keywords;
+      this.resumeAnalysis.personality = data[2].tree;
       this.resumeAnalysis.$save();
     });
   }
@@ -53,4 +59,4 @@ Isabella Davis`
   }
 }
 
-ProfileController.$inject = ['$firebaseRef', '$firebaseObject', '$timeout', '$stateParams', '$q', 'TaxonomyService', 'PersonalityInsightsService'];
+ProfileController.$inject = ['$firebaseRef', '$firebaseObject', '$timeout', '$stateParams', '$q', 'AlchemyTaxonomyService', 'AlchemyKeywordService', 'PersonalityInsightsService'];
