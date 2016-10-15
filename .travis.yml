@@ -1,0 +1,24 @@
+language: node_js
+sudo: true
+cache:
+  directories:
+  - node_modules
+node_js: stable
+script:
+  - npm run lint
+  - npm run codecov
+env:
+  global:
+  - CF_APP=att-hackathon
+  - CF_API=https://api.ng.bluemix.net
+  - CF_ORGANIZATION=WatsonPlatformServices
+  - CF_SPACE=demos
+before_deploy: npm install -g cf-blue-green
+deploy:
+  provider: script
+  script:
+    - cf-blue-green-travis
+  on:
+    branch: master
+    repo: watson-developer-cloud/alchemylanguage-nodejs
+  skip_cleanup: true

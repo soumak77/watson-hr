@@ -1,0 +1,74 @@
+{
+  "name": "watson-human-resources",
+  "version": "0.0.0",
+  "description": "Using Watson to assist with Human Resources",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/soumak77/watson-hr.git"
+  },
+  "author": "",
+  "contributors": [
+    {
+      "name": "Brian Soumakian",
+      "email": "bsoumakian@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/soumak77/watson-hr/issues"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "build": "gulp compile",
+    "postinstall": "npm run build",
+    "dev": "gulp",
+    "test": "istanbul cover ./node_modules/mocha/bin/_mocha",
+    "lint": "eslint .",
+    "autofix": "eslint --fix .",
+    "codecov": "npm run test && (codecov || true)",
+    "validate": "npm ls",
+    "initwatson": "cf create-service tone_analyzer standard tone-analyzer-standard && cf create-service tradeoff_analytics standard tradeoff-analytics-standard-service && cf create-service watson_vision_combined free visual-recognition-free && cf create-service speech_to_text standard speech-to-text-service-standard && cf create-service personality_insights tiered personality-insights-service && cf create-service alchemy_api free alchemy-service",
+    "deploy": "cf push"
+  },
+  "dependencies": {
+    "body-parser": "^1.13.2",
+    "cf-deployment-tracker-client": "0.0.8",
+    "cookie-parser": "^1.4.1",
+    "csurf": "^1.8.3",
+    "dotenv": "^2.0.0",
+    "ejs": "^2.3.4",
+    "express": "^4.12.2",
+    "express-rate-limit": "^2.1.0",
+    "express-secure-only": "^0.2.1",
+    "glob": "^7.0.3",
+    "helmet": "^2.1.0",
+    "morgan": "^1.7.0",
+    "precommit-hook": "^3.0.0",
+    "request": "^2.72.0",
+    "vcap_services": "^0.1.7",
+    "watson-developer-cloud": "^2.4.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.0.4",
+    "browser-sync": "^2.9.9",
+    "codecov": "^1.0.1",
+    "eslint-config-airbnb-es5": "^1.0.9",
+    "eslint-plugin-react": "^5.1.1",
+    "eslint": "^2.8.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-iconfont-css": "2.1.0",
+    "gulp-iconfont": "^8.0.0",
+    "gulp-nodemon": "^2.0.2",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.0.4",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5",
+    "run-sequence": "^1.1.5",
+    "supertest": "^1.2.0"
+  },
+  "engines": {
+    "node": "^6.5.0"
+  }
+}

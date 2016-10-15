@@ -1,0 +1,33 @@
+---
+declared-services:
+  alchemy-service:
+    label: alchemy_api
+    plan: free
+  personality-insights-service:
+    label: personality_insights
+    plan: tiered
+  speech-to-text-service-standard:
+    label: speech_to_text
+    plan: standard
+  tone-analyzer-standard:
+    label: tone_analyzer
+    plan: standard
+  visual-recognition-free:
+    label: watson_vision_combined
+    plan: free
+  tradeoff-analytics-standard-service:
+    label: tradeoff_analytics
+    plan: standard
+applications:
+- name: watson-human-resources
+  command: npm start
+  memory: 2GB
+  services:
+  - alchemy-service
+  - personality-insights-service
+  - speech-to-text-service-standard
+  - tone-analyzer-standard
+  - tradeoff-analytics-standard-service
+  - visual-recognition-free
+  env:
+    NPM_CONFIG_PRODUCTION: false
