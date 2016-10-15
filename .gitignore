@@ -9,3 +9,4 @@ public/css/style.css
 .env
 .jshintignore
 .jshintrc
+app/config/config-routes.js

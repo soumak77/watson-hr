@@ -6,22 +6,26 @@ controller: ProfileController as profile
 <div class="grid-block vertical" style="padding: 0 1rem;">
   <div class="grid-content shrink text-center">
     <img class="profile-image" ng-src="{{ profile.imagePath }}"></img>
-    <h2>Isabella Davis</h2>
+    <h2>{{ profile.name }}</h2>
     <span>{{ profile.resumeAnalysis.visual.images[0].faces[0].gender.gender.toLowerCase() | ucfirst }} {{ profile.resumeAnalysis.visual.images[0].faces[0].age.min }} - {{ profile.resumeAnalysis.visual.images[0].faces[0].age.max }}</span>
   </div>
-  <div class="grid-content shrink">
+  <div class="grid-content shrink" ng-if="profile.editable">
     <h4>Resume</h4>
-    <textarea class="profile-resume" ng-model="profile.resume"></textarea>
+    <a class="button" ba-open="resume-modal">Edit</a>
+  </div>
+  <div class="grid-content shrink" ng-if="!profile.editable">
+    <h4>Resume</h4>
+    <a class="button" ba-open="resume-modal">View</a>
     <a class="button" ng-click="profile.analyzeResume()">Analyze</a>
   </div>
   <div class="grid-block vertical shrink">
     <div class="grid-content shrink">
-      <h6>Taxonomy</h6>
+      <h4>Taxonomy</h4>
       <span class="label" ng-class="taxonomy.score > 0.8 ? 'success' : (taxonomy.score > 0.5 ? 'warning' : 'alert')"
         ng-repeat="taxonomy in profile.resumeAnalysis.taxonomy">{{ taxonomy.label }}</span>
     </div>
     <div class="grid-content shrink">
-      <h6>Keywords</h6>
+      <h4>Keywords</h4>
       <span class="label" ng-class="keyword.relevance > 0.8 ? 'success' : (keyword.relevance > 0.5 ? 'warning' : 'alert')"
         ng-repeat="keyword in profile.resumeAnalysis.keywords">{{ keyword.text }}</span>
     </div>
@@ -39,3 +43,14 @@ controller: ProfileController as profile
     </div>
   </div>
 </div>
+<ba-modal id="resume-modal">
+  <a class="close-button" ba-close="">⨯</a>
+  <div class="grid-block">
+    <div class="grid-content" >
+      <h4 class="text-center">Resume</h4>
+      <pre ng-if="!profile.editable">{{ profile.resumeAnalysis.content }}</pre>
+      <textarea class="profile-resume" ng-if="profile.editable" ng-model="profile.resumeAnalysis.content"></textarea>
+      <a class="button" ba-close="" ng-if="profile.editable" ng-click="profile.analyzeResume()">Save</a>
+    </div>
+  </div>
+</ba-modal>

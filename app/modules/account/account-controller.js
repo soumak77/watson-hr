@@ -1,8 +1,9 @@
 export default class AccountController {
-  constructor($firebaseAuthService, $log, BaseAppsApi) {
+  constructor($firebaseAuthService, $log, $state, BaseAppsApi) {
     this.authService = $firebaseAuthService;
     this.authLoading = false;
     this.$log = $log;
+    this.$state = $state;
     this.BaseAppsApi = BaseAppsApi;
     return this;
   }
@@ -15,6 +16,9 @@ export default class AccountController {
       case 'anonymous':
         this.authLoading = true;
         return this.authService.$signInAnonymously()
+          .then(() => {
+            this.$state.go('profile', {id: this.authService.$getAuth().uid});
+          })
           .catch((error) => {
             $log.log('Login Failed!', error);
             BaseAppsApi.publish('account-notifications', {
@@ -32,6 +36,9 @@ export default class AccountController {
       case 'github':
         this.authLoading = true;
         return this.authService.$signInWithPopup(provider)
+          .then(() => {
+            this.$state.go('profile', {id: this.authService.$getAuth().uid});
+          })
           .catch((error) => {
             $log.log('Login Failed!', error);
             BaseAppsApi.publish('account-notifications', {
@@ -62,4 +69,4 @@ export default class AccountController {
   }
 }
 
-AccountController.$inject = ['$firebaseAuthService', '$log', 'BaseAppsApi'];
+AccountController.$inject = ['$firebaseAuthService', '$log', '$state', 'BaseAppsApi'];

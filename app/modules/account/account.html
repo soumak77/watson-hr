@@ -7,7 +7,7 @@ animationOut: slideOutRight
 ---
 <ba-notification-set id="account-notifications" position="top-right"></ba-notification-set>
 <div class="grid-container" style="padding: 0 1rem;">
-  <h2>Authentication with Firebase!</h2>
+  <h2>Login below</h2>
   <div ng-show="!account.authLoading && !account.authService.$getAuth()">
     <a class="button large expand" ng-click="account.signin('anonymous')"><ba-ionicon icon="md-person"></ba-ionicon>Anonymous Login</a>
     <a class="button large expand" ng-click="account.signin('google')"><ba-ionicon icon="logo-google"></ba-ionicon>Google Login</a>
@@ -20,9 +20,5 @@ animationOut: slideOutRight
   </div>
   <div class="text-center">
     <ba-spin-kit ng-show="account.authLoading" loader="wave" class="primary large"></ba-spin-kit>
-  </div>
-  <div ng-show="!account.authLoading && account.authService.$getAuth()">
-    <h4>User Info</h4>
-    <blockquote><pre>{{ account.printUserInfo() }}</pre></blockquote>
   </div>
 </div>

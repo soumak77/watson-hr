@@ -1,51 +1,68 @@
 export default class ProfileController {
-  constructor($firebaseRef, $firebaseObject, $timeout, $stateParams, $q, AlchemyTaxonomyService, AlchemyKeywordService, PersonalityInsightsService, VisualRecognitionService) {
-    this.id = $stateParams.id;
-    this.dataRef = $firebaseRef.default.child('profiles').child(this.id);
-    this.resume = `
-Dear Director Cyrus,
-
-I write in response to your ad seeking an Bookkeeper at Michael’s Furniture. As a highly competent Bookkeeper, I would bring a detail-focused, ethical, and problem solving mindset to this role.
-In my current position, I maintain an exceedingly functional and professional environment while handling bookkeeping for the New Cityland School District. I have a knack for problem solving and work well independently and with little oversight. I respond to requests from colleagues and staff in a timely manner and am adept at prioritizing multiple ongoing projects.
-Additionally, I am an expert in:
-Maintaining diverse financial documentation in an organized fashion both on paper and electronically for easy reference.
-Processing reconciliations and documents quickly to ensure system remains up to date.
-Completing payroll accurately and on time.
-Increasing efficiency and improving workflow through creative process improvements.
-
-I am a self-starter and excel at account reconciliations, cost control, and payroll. I am also deeply familiar with Excel and QuickBooks and adapt quickly to new programs and procedures. As a part of the team at Michael’s Furniture, I hope to provide unparalleled accuracy and help you expand your business goals.
-My resume and references are attached. Please feel free to contact me at your earliest convenience to discuss the position and your needs in detail.
-Thank you for your time and consideration.
-
-Sincerely,
-Isabella Davis`
-    ;
-    this.imagePath = 'images/profiles/1.jpeg';
-    this.resumeAnalysis = $firebaseObject(this.dataRef.child('resume'));
+  constructor($firebaseRef, $firebaseObject, $firebaseAuthService, $state, $timeout, $stateParams, $q, AlchemyTaxonomyService, AlchemyKeywordService, PersonalityInsightsService, VisualRecognitionService) {
     this.$AlchemyTaxonomyService = AlchemyTaxonomyService;
     this.$AlchemyKeywordService = AlchemyKeywordService;
     this.$PersonalityInsightsService = PersonalityInsightsService;
     this.$VisualRecognitionService = VisualRecognitionService;
     this.$q = $q;
     this.$timeout = $timeout;
+    this.$firebaseRef = $firebaseRef;
+    this.$firebaseObject = $firebaseObject;
+
+    this.init($stateParams.id);
+    this.editable = false;
+
+    // require authentication to access profiles
+    $firebaseAuthService.$requireSignIn()
+      .then(() => {
+        if (!this.id) {
+          $state.go('profile', {id: $firebaseAuthService.$getAuth().uid }, { reload: true });
+        } else {
+          this.editable = $firebaseAuthService.$getAuth().uid === this.id;
+          if (this.editable) {
+            // check if user has image from social site
+            if ($firebaseAuthService.$getAuth().photoURL) {
+              this.imagePath = $firebaseAuthService.$getAuth().photoURL;
+            }
+            if ($firebaseAuthService.$getAuth().displayName) {
+              this.name = $firebaseAuthService.$getAuth().displayName;
+            }
+
+            this.dataRef.child('name').set(this.name);
+            this.dataRef.child('image').set(this.imagePath);
+          }
+        }
+      })
+      .catch(() => $state.go('home'));
+
     return this;
+  }
+
+  init(id) {
+    this.id = id;
+    if (id) {
+      this.dataRef = this.$firebaseRef.default.child('profiles').child(this.id);
+      this.imagePath = 'images/profiles/' + this.id + '.jpeg';
+      this.name = 'Anonymous';
+      this.resumeAnalysis = this.$firebaseObject(this.dataRef.child('resume'));
+    }
   }
 
   analyzeResume() {
     var promises = [];
 
     promises.push(this.$AlchemyTaxonomyService.save({}, {
-      text: this.resume
+      text: this.resumeAnalysis.content
     }).$promise);
 
     promises.push(this.$AlchemyKeywordService.save({}, {
-      text: this.resume,
+      text: this.resumeAnalysis.content,
       sentiment: 1,
       emotion: 1
     }).$promise);
 
     promises.push(this.$PersonalityInsightsService.save({}, {
-      text: this.resume
+      text: this.resumeAnalysis.content
     }).$promise);
 
     promises.push(this.$VisualRecognitionService.save({}, {
@@ -66,4 +83,4 @@ Isabella Davis`
   }
 }
 
-ProfileController.$inject = ['$firebaseRef', '$firebaseObject', '$timeout', '$stateParams', '$q', 'AlchemyTaxonomyService', 'AlchemyKeywordService', 'PersonalityInsightsService', 'VisualRecognitionService'];
+ProfileController.$inject = ['$firebaseRef', '$firebaseObject', '$firebaseAuthService', '$state', '$timeout', '$stateParams', '$q', 'AlchemyTaxonomyService', 'AlchemyKeywordService', 'PersonalityInsightsService', 'VisualRecognitionService'];

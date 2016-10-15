@@ -15,3 +15,11 @@ img.profile-image {
     height: 200px;
   }
 }
+
+textarea.profile-resume {
+  min-height: 200px;
+
+  @include breakpoint(medium) {
+    min-height: 300px;
+  }
+}

@@ -1995,61 +1995,61 @@ a, [ui-sref], [ba-open], [ba-close], [ba-toggle] {
       border-left-color: #fff; }
   /* line 299, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/components/_button.scss */
   .button.warning {
-    background: #F08A24;
-    color: #fff; }
+    background: #ffff4c;
+    color: #000; }
     /* line 200, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/components/_button.scss */
     .button.warning:hover, .button.warning:focus {
-      background: #dc750f;
-      color: #fff; }
+      background: #ffff1a;
+      color: #000; }
     /* line 13, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_icons.scss */
     .button.warning .ionicons * {
-      fill: #fff;
-      stroke: #fff; }
+      fill: #000;
+      stroke: #000; }
     /* line 13, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_icons.scss */
     .button.warning .material-icons * {
-      fill: #fff;
-      stroke: #fff; }
+      fill: #000;
+      stroke: #000; }
     /* line 13, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_icons.scss */
     .button.warning .open-iconic * {
-      fill: #fff;
-      stroke: #fff; }
+      fill: #000;
+      stroke: #000; }
     /* line 29, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_loaders.scss */
     .button.warning .sk-loader.sk-rotating-plane {
-      background-color: #fff; }
+      background-color: #000; }
     /* line 35, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/2-double-bounce.scss */
     .button.warning .sk-loader.sk-double-bounce .sk-child {
-      background-color: #fff; }
+      background-color: #000; }
     /* line 46, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/3-wave.scss */
     .button.warning .sk-loader.sk-wave .sk-rect {
-      background-color: #fff; }
+      background-color: #000; }
     /* line 69, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/4-wandering-cubes.scss */
     .button.warning .sk-loader.sk-wandering-cubes .sk-cube {
-      background-color: #fff; }
+      background-color: #000; }
     /* line 33, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_loaders.scss */
     .button.warning .sk-loader.sk-pulse {
-      background-color: #fff; }
+      background-color: #000; }
     /* line 43, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/6-chasing-dots.scss */
     .button.warning .sk-loader.sk-chasing-dots .sk-child {
-      background-color: #fff; }
+      background-color: #000; }
     /* line 48, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/7-three-bounce.scss */
     .button.warning .sk-loader.sk-three-bounce .sk-child {
-      background-color: #fff; }
+      background-color: #000; }
     /* line 45, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/8-circle.scss */
     .button.warning .sk-loader.sk-circle .sk-child:before {
-      background-color: #fff; }
+      background-color: #000; }
     /* line 42, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/9-cube-grid.scss */
     .button.warning .sk-loader.sk-cube-grid .sk-cube {
-      background-color: #fff; }
+      background-color: #000; }
     /* line 45, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/10-fading-circle.scss */
     .button.warning .sk-loader.sk-fading-circle .sk-circle:before {
-      background-color: #fff; }
+      background-color: #000; }
     /* line 47, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/11-folding-cube.scss */
     .button.warning .sk-loader.sk-folding-cube .sk-cube:before {
-      background-color: #fff; }
+      background-color: #000; }
     /* line 42, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/12-solid-circle.scss */
     .button.warning .sk-loader.sk-solid-circle .sk-child {
-      border-top-color: #fff;
-      border-left-color: #fff; }
+      border-top-color: #000;
+      border-left-color: #000; }
   /* line 300, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/components/_button.scss */
   .button.alert {
     background: #F04124;
@@ -2559,116 +2559,116 @@ a, [ui-sref], [ba-open], [ba-close], [ba-toggle] {
         border-left-color: #6dc68e; }
     /* line 308, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/components/_button.scss */
     .button.hollow.warning {
-      border: 1px solid #F08A24;
+      border: 1px solid #ffff4c;
       padding-top: calc(0.85em - 1px);
       padding-right: calc(1em - 1px);
       padding-bottom: calc(0.85em - 1px);
       padding-left: calc(1em - 1px);
       background: transparent;
-      color: #F08A24; }
+      color: #ffff4c; }
       /* line 185, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/components/_button.scss */
       .button.hollow.warning:hover, .button.hollow.warning:focus {
-        border-color: #f4a75b;
+        border-color: #ffff79;
         background: transparent;
-        color: #f4a75b; }
+        color: #ffff79; }
       /* line 13, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_icons.scss */
       .button.hollow.warning .ionicons * {
-        fill: #F08A24;
-        stroke: #F08A24; }
+        fill: #ffff4c;
+        stroke: #ffff4c; }
       /* line 13, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_icons.scss */
       .button.hollow.warning .material-icons * {
-        fill: #F08A24;
-        stroke: #F08A24; }
+        fill: #ffff4c;
+        stroke: #ffff4c; }
       /* line 13, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_icons.scss */
       .button.hollow.warning .open-iconic * {
-        fill: #F08A24;
-        stroke: #F08A24; }
+        fill: #ffff4c;
+        stroke: #ffff4c; }
       /* line 13, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_icons.scss */
       .button.hollow.warning:hover .ionicons * {
-        fill: #f4a75b;
-        stroke: #f4a75b; }
+        fill: #ffff79;
+        stroke: #ffff79; }
       /* line 13, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_icons.scss */
       .button.hollow.warning:hover .material-icons * {
-        fill: #f4a75b;
-        stroke: #f4a75b; }
+        fill: #ffff79;
+        stroke: #ffff79; }
       /* line 13, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_icons.scss */
       .button.hollow.warning:hover .open-iconic * {
-        fill: #f4a75b;
-        stroke: #f4a75b; }
+        fill: #ffff79;
+        stroke: #ffff79; }
       /* line 29, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_loaders.scss */
       .button.hollow.warning .sk-loader.sk-rotating-plane {
-        background-color: #F08A24; }
+        background-color: #ffff4c; }
       /* line 35, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/2-double-bounce.scss */
       .button.hollow.warning .sk-loader.sk-double-bounce .sk-child {
-        background-color: #F08A24; }
+        background-color: #ffff4c; }
       /* line 46, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/3-wave.scss */
       .button.hollow.warning .sk-loader.sk-wave .sk-rect {
-        background-color: #F08A24; }
+        background-color: #ffff4c; }
       /* line 69, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/4-wandering-cubes.scss */
       .button.hollow.warning .sk-loader.sk-wandering-cubes .sk-cube {
-        background-color: #F08A24; }
+        background-color: #ffff4c; }
       /* line 33, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_loaders.scss */
       .button.hollow.warning .sk-loader.sk-pulse {
-        background-color: #F08A24; }
+        background-color: #ffff4c; }
       /* line 43, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/6-chasing-dots.scss */
       .button.hollow.warning .sk-loader.sk-chasing-dots .sk-child {
-        background-color: #F08A24; }
+        background-color: #ffff4c; }
       /* line 48, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/7-three-bounce.scss */
       .button.hollow.warning .sk-loader.sk-three-bounce .sk-child {
-        background-color: #F08A24; }
+        background-color: #ffff4c; }
       /* line 45, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/8-circle.scss */
       .button.hollow.warning .sk-loader.sk-circle .sk-child:before {
-        background-color: #F08A24; }
+        background-color: #ffff4c; }
       /* line 42, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/9-cube-grid.scss */
       .button.hollow.warning .sk-loader.sk-cube-grid .sk-cube {
-        background-color: #F08A24; }
+        background-color: #ffff4c; }
       /* line 45, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/10-fading-circle.scss */
       .button.hollow.warning .sk-loader.sk-fading-circle .sk-circle:before {
-        background-color: #F08A24; }
+        background-color: #ffff4c; }
       /* line 47, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/11-folding-cube.scss */
       .button.hollow.warning .sk-loader.sk-folding-cube .sk-cube:before {
-        background-color: #F08A24; }
+        background-color: #ffff4c; }
       /* line 42, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/12-solid-circle.scss */
       .button.hollow.warning .sk-loader.sk-solid-circle .sk-child {
-        border-top-color: #F08A24;
-        border-left-color: #F08A24; }
+        border-top-color: #ffff4c;
+        border-left-color: #ffff4c; }
       /* line 29, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_loaders.scss */
       .button.hollow.warning:hover .sk-loader.sk-rotating-plane {
-        background-color: #f4a75b; }
+        background-color: #ffff79; }
       /* line 35, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/2-double-bounce.scss */
       .button.hollow.warning:hover .sk-loader.sk-double-bounce .sk-child {
-        background-color: #f4a75b; }
+        background-color: #ffff79; }
       /* line 46, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/3-wave.scss */
       .button.hollow.warning:hover .sk-loader.sk-wave .sk-rect {
-        background-color: #f4a75b; }
+        background-color: #ffff79; }
       /* line 69, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/4-wandering-cubes.scss */
       .button.hollow.warning:hover .sk-loader.sk-wandering-cubes .sk-cube {
-        background-color: #f4a75b; }
+        background-color: #ffff79; }
       /* line 33, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_loaders.scss */
       .button.hollow.warning:hover .sk-loader.sk-pulse {
-        background-color: #f4a75b; }
+        background-color: #ffff79; }
       /* line 43, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/6-chasing-dots.scss */
       .button.hollow.warning:hover .sk-loader.sk-chasing-dots .sk-child {
-        background-color: #f4a75b; }
+        background-color: #ffff79; }
       /* line 48, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/7-three-bounce.scss */
       .button.hollow.warning:hover .sk-loader.sk-three-bounce .sk-child {
-        background-color: #f4a75b; }
+        background-color: #ffff79; }
       /* line 45, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/8-circle.scss */
       .button.hollow.warning:hover .sk-loader.sk-circle .sk-child:before {
-        background-color: #f4a75b; }
+        background-color: #ffff79; }
       /* line 42, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/9-cube-grid.scss */
       .button.hollow.warning:hover .sk-loader.sk-cube-grid .sk-cube {
-        background-color: #f4a75b; }
+        background-color: #ffff79; }
       /* line 45, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/10-fading-circle.scss */
       .button.hollow.warning:hover .sk-loader.sk-fading-circle .sk-circle:before {
-        background-color: #f4a75b; }
+        background-color: #ffff79; }
       /* line 47, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/11-folding-cube.scss */
       .button.hollow.warning:hover .sk-loader.sk-folding-cube .sk-cube:before {
-        background-color: #f4a75b; }
+        background-color: #ffff79; }
       /* line 42, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/12-solid-circle.scss */
       .button.hollow.warning:hover .sk-loader.sk-solid-circle .sk-child {
-        border-top-color: #f4a75b;
-        border-left-color: #f4a75b; }
+        border-top-color: #ffff79;
+        border-left-color: #ffff79; }
     /* line 309, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/components/_button.scss */
     .button.hollow.alert {
       border: 1px solid #F04124;
@@ -3241,65 +3241,65 @@ a, [ui-sref], [ba-open], [ba-close], [ba-toggle] {
     background: #39925a; }
   /* line 142, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/components/_button-group.scss */
   .button-group.warning > li > a, .button-group.warning > li > label, .button-group.warning > li > button {
-    background: #F08A24;
-    color: #fff;
-    border-color: #dc750f; }
+    background: #ffff4c;
+    color: #000;
+    border-color: #ffff1a; }
     /* line 200, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/components/_button.scss */
     .button-group.warning > li > a:hover, .button-group.warning > li > a:focus, .button-group.warning > li > label:hover, .button-group.warning > li > label:focus, .button-group.warning > li > button:hover, .button-group.warning > li > button:focus {
-      background: #dc750f;
-      color: #fff; }
+      background: #ffff1a;
+      color: #000; }
     /* line 13, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_icons.scss */
     .button-group.warning > li > a .ionicons *, .button-group.warning > li > label .ionicons *, .button-group.warning > li > button .ionicons * {
-      fill: #fff;
-      stroke: #fff; }
+      fill: #000;
+      stroke: #000; }
     /* line 13, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_icons.scss */
     .button-group.warning > li > a .material-icons *, .button-group.warning > li > label .material-icons *, .button-group.warning > li > button .material-icons * {
-      fill: #fff;
-      stroke: #fff; }
+      fill: #000;
+      stroke: #000; }
     /* line 13, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_icons.scss */
     .button-group.warning > li > a .open-iconic *, .button-group.warning > li > label .open-iconic *, .button-group.warning > li > button .open-iconic * {
-      fill: #fff;
-      stroke: #fff; }
+      fill: #000;
+      stroke: #000; }
     /* line 29, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_loaders.scss */
     .button-group.warning > li > a .sk-loader.sk-rotating-plane, .button-group.warning > li > label .sk-loader.sk-rotating-plane, .button-group.warning > li > button .sk-loader.sk-rotating-plane {
-      background-color: #fff; }
+      background-color: #000; }
     /* line 35, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/2-double-bounce.scss */
     .button-group.warning > li > a .sk-loader.sk-double-bounce .sk-child, .button-group.warning > li > label .sk-loader.sk-double-bounce .sk-child, .button-group.warning > li > button .sk-loader.sk-double-bounce .sk-child {
-      background-color: #fff; }
+      background-color: #000; }
     /* line 46, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/3-wave.scss */
     .button-group.warning > li > a .sk-loader.sk-wave .sk-rect, .button-group.warning > li > label .sk-loader.sk-wave .sk-rect, .button-group.warning > li > button .sk-loader.sk-wave .sk-rect {
-      background-color: #fff; }
+      background-color: #000; }
     /* line 69, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/4-wandering-cubes.scss */
     .button-group.warning > li > a .sk-loader.sk-wandering-cubes .sk-cube, .button-group.warning > li > label .sk-loader.sk-wandering-cubes .sk-cube, .button-group.warning > li > button .sk-loader.sk-wandering-cubes .sk-cube {
-      background-color: #fff; }
+      background-color: #000; }
     /* line 33, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_loaders.scss */
     .button-group.warning > li > a .sk-loader.sk-pulse, .button-group.warning > li > label .sk-loader.sk-pulse, .button-group.warning > li > button .sk-loader.sk-pulse {
-      background-color: #fff; }
+      background-color: #000; }
     /* line 43, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/6-chasing-dots.scss */
     .button-group.warning > li > a .sk-loader.sk-chasing-dots .sk-child, .button-group.warning > li > label .sk-loader.sk-chasing-dots .sk-child, .button-group.warning > li > button .sk-loader.sk-chasing-dots .sk-child {
-      background-color: #fff; }
+      background-color: #000; }
     /* line 48, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/7-three-bounce.scss */
     .button-group.warning > li > a .sk-loader.sk-three-bounce .sk-child, .button-group.warning > li > label .sk-loader.sk-three-bounce .sk-child, .button-group.warning > li > button .sk-loader.sk-three-bounce .sk-child {
-      background-color: #fff; }
+      background-color: #000; }
     /* line 45, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/8-circle.scss */
     .button-group.warning > li > a .sk-loader.sk-circle .sk-child:before, .button-group.warning > li > label .sk-loader.sk-circle .sk-child:before, .button-group.warning > li > button .sk-loader.sk-circle .sk-child:before {
-      background-color: #fff; }
+      background-color: #000; }
     /* line 42, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/9-cube-grid.scss */
     .button-group.warning > li > a .sk-loader.sk-cube-grid .sk-cube, .button-group.warning > li > label .sk-loader.sk-cube-grid .sk-cube, .button-group.warning > li > button .sk-loader.sk-cube-grid .sk-cube {
-      background-color: #fff; }
+      background-color: #000; }
     /* line 45, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/10-fading-circle.scss */
     .button-group.warning > li > a .sk-loader.sk-fading-circle .sk-circle:before, .button-group.warning > li > label .sk-loader.sk-fading-circle .sk-circle:before, .button-group.warning > li > button .sk-loader.sk-fading-circle .sk-circle:before {
-      background-color: #fff; }
+      background-color: #000; }
     /* line 47, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/11-folding-cube.scss */
     .button-group.warning > li > a .sk-loader.sk-folding-cube .sk-cube:before, .button-group.warning > li > label .sk-loader.sk-folding-cube .sk-cube:before, .button-group.warning > li > button .sk-loader.sk-folding-cube .sk-cube:before {
-      background-color: #fff; }
+      background-color: #000; }
     /* line 42, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/12-solid-circle.scss */
     .button-group.warning > li > a .sk-loader.sk-solid-circle .sk-child, .button-group.warning > li > label .sk-loader.sk-solid-circle .sk-child, .button-group.warning > li > button .sk-loader.sk-solid-circle .sk-child {
-      border-top-color: #fff;
-      border-left-color: #fff; }
+      border-top-color: #000;
+      border-left-color: #000; }
   /* line 147, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/components/_button-group.scss */
   .button-group.warning > li.is-active > a, .button-group.warning > li.is-active > label, .button-group.warning > li.is-active > button {
-    background: #dc750f; }
+    background: #ffff1a; }
   /* line 142, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/components/_button-group.scss */
   .button-group.alert > li > a, .button-group.alert > li > label, .button-group.alert > li > button {
     background: #F04124;
@@ -3485,65 +3485,65 @@ a, [ui-sref], [ba-open], [ba-close], [ba-toggle] {
       border-left-color: #fff; }
   /* line 239, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/components/_button-group.scss */
   .button-group > li.warning > a, .button-group > li.warning > label, .button-group > li.warning > button {
-    background: #F08A24;
-    color: #fff;
-    border-color: #F08A24; }
+    background: #ffff4c;
+    color: #000;
+    border-color: #ffff4c; }
     /* line 200, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/components/_button.scss */
     .button-group > li.warning > a:hover, .button-group > li.warning > a:focus, .button-group > li.warning > label:hover, .button-group > li.warning > label:focus, .button-group > li.warning > button:hover, .button-group > li.warning > button:focus {
-      background: #dc750f;
-      color: #fff; }
+      background: #ffff1a;
+      color: #000; }
     /* line 213, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/components/_button.scss */
     .button-group > li.warning > a:hover, .button-group > li.warning > a:focus, .button-group > li.warning > label:hover, .button-group > li.warning > label:focus, .button-group > li.warning > button:hover, .button-group > li.warning > button:focus {
-      border-color: #c2680d; }
+      border-color: #f8f800; }
     /* line 13, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_icons.scss */
     .button-group > li.warning > a .ionicons *, .button-group > li.warning > label .ionicons *, .button-group > li.warning > button .ionicons * {
-      fill: #fff;
-      stroke: #fff; }
+      fill: #000;
+      stroke: #000; }
     /* line 13, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_icons.scss */
     .button-group > li.warning > a .material-icons *, .button-group > li.warning > label .material-icons *, .button-group > li.warning > button .material-icons * {
-      fill: #fff;
-      stroke: #fff; }
+      fill: #000;
+      stroke: #000; }
     /* line 13, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_icons.scss */
     .button-group > li.warning > a .open-iconic *, .button-group > li.warning > label .open-iconic *, .button-group > li.warning > button .open-iconic * {
-      fill: #fff;
-      stroke: #fff; }
+      fill: #000;
+      stroke: #000; }
     /* line 29, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_loaders.scss */
     .button-group > li.warning > a .sk-loader.sk-rotating-plane, .button-group > li.warning > label .sk-loader.sk-rotating-plane, .button-group > li.warning > button .sk-loader.sk-rotating-plane {
-      background-color: #fff; }
+      background-color: #000; }
     /* line 35, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/2-double-bounce.scss */
     .button-group > li.warning > a .sk-loader.sk-double-bounce .sk-child, .button-group > li.warning > label .sk-loader.sk-double-bounce .sk-child, .button-group > li.warning > button .sk-loader.sk-double-bounce .sk-child {
-      background-color: #fff; }
+      background-color: #000; }
     /* line 46, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/3-wave.scss */
     .button-group > li.warning > a .sk-loader.sk-wave .sk-rect, .button-group > li.warning > label .sk-loader.sk-wave .sk-rect, .button-group > li.warning > button .sk-loader.sk-wave .sk-rect {
-      background-color: #fff; }
+      background-color: #000; }
     /* line 69, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/4-wandering-cubes.scss */
     .button-group > li.warning > a .sk-loader.sk-wandering-cubes .sk-cube, .button-group > li.warning > label .sk-loader.sk-wandering-cubes .sk-cube, .button-group > li.warning > button .sk-loader.sk-wandering-cubes .sk-cube {
-      background-color: #fff; }
+      background-color: #000; }
     /* line 33, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_loaders.scss */
     .button-group > li.warning > a .sk-loader.sk-pulse, .button-group > li.warning > label .sk-loader.sk-pulse, .button-group > li.warning > button .sk-loader.sk-pulse {
-      background-color: #fff; }
+      background-color: #000; }
     /* line 43, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/6-chasing-dots.scss */
     .button-group > li.warning > a .sk-loader.sk-chasing-dots .sk-child, .button-group > li.warning > label .sk-loader.sk-chasing-dots .sk-child, .button-group > li.warning > button .sk-loader.sk-chasing-dots .sk-child {
-      background-color: #fff; }
+      background-color: #000; }
     /* line 48, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/7-three-bounce.scss */
     .button-group > li.warning > a .sk-loader.sk-three-bounce .sk-child, .button-group > li.warning > label .sk-loader.sk-three-bounce .sk-child, .button-group > li.warning > button .sk-loader.sk-three-bounce .sk-child {
-      background-color: #fff; }
+      background-color: #000; }
     /* line 45, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/8-circle.scss */
     .button-group > li.warning > a .sk-loader.sk-circle .sk-child:before, .button-group > li.warning > label .sk-loader.sk-circle .sk-child:before, .button-group > li.warning > button .sk-loader.sk-circle .sk-child:before {
-      background-color: #fff; }
+      background-color: #000; }
     /* line 42, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/9-cube-grid.scss */
     .button-group > li.warning > a .sk-loader.sk-cube-grid .sk-cube, .button-group > li.warning > label .sk-loader.sk-cube-grid .sk-cube, .button-group > li.warning > button .sk-loader.sk-cube-grid .sk-cube {
-      background-color: #fff; }
+      background-color: #000; }
     /* line 45, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/10-fading-circle.scss */
     .button-group > li.warning > a .sk-loader.sk-fading-circle .sk-circle:before, .button-group > li.warning > label .sk-loader.sk-fading-circle .sk-circle:before, .button-group > li.warning > button .sk-loader.sk-fading-circle .sk-circle:before {
-      background-color: #fff; }
+      background-color: #000; }
     /* line 47, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/11-folding-cube.scss */
     .button-group > li.warning > a .sk-loader.sk-folding-cube .sk-cube:before, .button-group > li.warning > label .sk-loader.sk-folding-cube .sk-cube:before, .button-group > li.warning > button .sk-loader.sk-folding-cube .sk-cube:before {
-      background-color: #fff; }
+      background-color: #000; }
     /* line 42, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/12-solid-circle.scss */
     .button-group > li.warning > a .sk-loader.sk-solid-circle .sk-child, .button-group > li.warning > label .sk-loader.sk-solid-circle .sk-child, .button-group > li.warning > button .sk-loader.sk-solid-circle .sk-child {
-      border-top-color: #fff;
-      border-left-color: #fff; }
+      border-top-color: #000;
+      border-left-color: #000; }
   /* line 240, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/components/_button-group.scss */
   .button-group > li.alert > a, .button-group > li.alert > label, .button-group > li.alert > button {
     background: #F04124;
@@ -3997,134 +3997,134 @@ a, [ui-sref], [ba-open], [ba-close], [ba-toggle] {
         border-left-color: #fff; }
     /* line 247, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/components/_button-group.scss */
     .button-group.segmented.warning {
-      border-color: #F08A24; }
+      border-color: #ffff4c; }
       /* line 160, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/components/_button-group.scss */
       .button-group.segmented.warning > li > a, .button-group.segmented.warning > li > label, .button-group.segmented.warning > li > button {
-        border-color: #F08A24;
-        color: #F08A24; }
+        border-color: #ffff4c;
+        color: #ffff4c; }
         /* line 165, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/components/_button-group.scss */
         .button-group.segmented.warning > li > a:hover, .button-group.segmented.warning > li > label:hover, .button-group.segmented.warning > li > button:hover {
-          background: rgba(240, 138, 36, 0.25);
-          color: #F08A24; }
+          background: rgba(255, 255, 76, 0.25);
+          color: #ffff4c; }
         /* line 13, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_icons.scss */
         .button-group.segmented.warning > li > a .ionicons *, .button-group.segmented.warning > li > label .ionicons *, .button-group.segmented.warning > li > button .ionicons * {
-          fill: #F08A24;
-          stroke: #F08A24; }
+          fill: #ffff4c;
+          stroke: #ffff4c; }
         /* line 13, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_icons.scss */
         .button-group.segmented.warning > li > a .material-icons *, .button-group.segmented.warning > li > label .material-icons *, .button-group.segmented.warning > li > button .material-icons * {
-          fill: #F08A24;
-          stroke: #F08A24; }
+          fill: #ffff4c;
+          stroke: #ffff4c; }
         /* line 13, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_icons.scss */
         .button-group.segmented.warning > li > a .open-iconic *, .button-group.segmented.warning > li > label .open-iconic *, .button-group.segmented.warning > li > button .open-iconic * {
-          fill: #F08A24;
-          stroke: #F08A24; }
+          fill: #ffff4c;
+          stroke: #ffff4c; }
         /* line 29, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_loaders.scss */
         .button-group.segmented.warning > li > a .sk-loader.sk-rotating-plane, .button-group.segmented.warning > li > label .sk-loader.sk-rotating-plane, .button-group.segmented.warning > li > button .sk-loader.sk-rotating-plane {
-          background-color: #F08A24; }
+          background-color: #ffff4c; }
         /* line 35, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/2-double-bounce.scss */
         .button-group.segmented.warning > li > a .sk-loader.sk-double-bounce .sk-child, .button-group.segmented.warning > li > label .sk-loader.sk-double-bounce .sk-child, .button-group.segmented.warning > li > button .sk-loader.sk-double-bounce .sk-child {
-          background-color: #F08A24; }
+          background-color: #ffff4c; }
         /* line 46, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/3-wave.scss */
         .button-group.segmented.warning > li > a .sk-loader.sk-wave .sk-rect, .button-group.segmented.warning > li > label .sk-loader.sk-wave .sk-rect, .button-group.segmented.warning > li > button .sk-loader.sk-wave .sk-rect {
-          background-color: #F08A24; }
+          background-color: #ffff4c; }
         /* line 69, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/4-wandering-cubes.scss */
         .button-group.segmented.warning > li > a .sk-loader.sk-wandering-cubes .sk-cube, .button-group.segmented.warning > li > label .sk-loader.sk-wandering-cubes .sk-cube, .button-group.segmented.warning > li > button .sk-loader.sk-wandering-cubes .sk-cube {
-          background-color: #F08A24; }
+          background-color: #ffff4c; }
         /* line 33, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_loaders.scss */
         .button-group.segmented.warning > li > a .sk-loader.sk-pulse, .button-group.segmented.warning > li > label .sk-loader.sk-pulse, .button-group.segmented.warning > li > button .sk-loader.sk-pulse {
-          background-color: #F08A24; }
+          background-color: #ffff4c; }
         /* line 43, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/6-chasing-dots.scss */
         .button-group.segmented.warning > li > a .sk-loader.sk-chasing-dots .sk-child, .button-group.segmented.warning > li > label .sk-loader.sk-chasing-dots .sk-child, .button-group.segmented.warning > li > button .sk-loader.sk-chasing-dots .sk-child {
-          background-color: #F08A24; }
+          background-color: #ffff4c; }
         /* line 48, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/7-three-bounce.scss */
         .button-group.segmented.warning > li > a .sk-loader.sk-three-bounce .sk-child, .button-group.segmented.warning > li > label .sk-loader.sk-three-bounce .sk-child, .button-group.segmented.warning > li > button .sk-loader.sk-three-bounce .sk-child {
-          background-color: #F08A24; }
+          background-color: #ffff4c; }
         /* line 45, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/8-circle.scss */
         .button-group.segmented.warning > li > a .sk-loader.sk-circle .sk-child:before, .button-group.segmented.warning > li > label .sk-loader.sk-circle .sk-child:before, .button-group.segmented.warning > li > button .sk-loader.sk-circle .sk-child:before {
-          background-color: #F08A24; }
+          background-color: #ffff4c; }
         /* line 42, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/9-cube-grid.scss */
         .button-group.segmented.warning > li > a .sk-loader.sk-cube-grid .sk-cube, .button-group.segmented.warning > li > label .sk-loader.sk-cube-grid .sk-cube, .button-group.segmented.warning > li > button .sk-loader.sk-cube-grid .sk-cube {
-          background-color: #F08A24; }
+          background-color: #ffff4c; }
         /* line 45, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/10-fading-circle.scss */
         .button-group.segmented.warning > li > a .sk-loader.sk-fading-circle .sk-circle:before, .button-group.segmented.warning > li > label .sk-loader.sk-fading-circle .sk-circle:before, .button-group.segmented.warning > li > button .sk-loader.sk-fading-circle .sk-circle:before {
-          background-color: #F08A24; }
+          background-color: #ffff4c; }
         /* line 47, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/11-folding-cube.scss */
         .button-group.segmented.warning > li > a .sk-loader.sk-folding-cube .sk-cube:before, .button-group.segmented.warning > li > label .sk-loader.sk-folding-cube .sk-cube:before, .button-group.segmented.warning > li > button .sk-loader.sk-folding-cube .sk-cube:before {
-          background-color: #F08A24; }
+          background-color: #ffff4c; }
         /* line 42, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/12-solid-circle.scss */
         .button-group.segmented.warning > li > a .sk-loader.sk-solid-circle .sk-child, .button-group.segmented.warning > li > label .sk-loader.sk-solid-circle .sk-child, .button-group.segmented.warning > li > button .sk-loader.sk-solid-circle .sk-child {
-          border-top-color: #F08A24;
-          border-left-color: #F08A24; }
+          border-top-color: #ffff4c;
+          border-left-color: #ffff4c; }
       /* line 189, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/components/_button-group.scss */
       .button-group.segmented.warning > li.is-active > a, .button-group.segmented.warning > li.is-active > a:hover,
       .button-group.segmented.warning > li > input:checked + label,
       .button-group.segmented.warning > li > input:checked + label:hover {
-        background: #F08A24;
-        color: #fff; }
+        background: #ffff4c;
+        color: #000; }
       /* line 13, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_icons.scss */
       .button-group.segmented.warning > li.is-active > a .ionicons *,
       .button-group.segmented.warning > li > input:checked + label .ionicons * {
-        fill: #fff;
-        stroke: #fff; }
+        fill: #000;
+        stroke: #000; }
       /* line 13, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_icons.scss */
       .button-group.segmented.warning > li.is-active > a .material-icons *,
       .button-group.segmented.warning > li > input:checked + label .material-icons * {
-        fill: #fff;
-        stroke: #fff; }
+        fill: #000;
+        stroke: #000; }
       /* line 13, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_icons.scss */
       .button-group.segmented.warning > li.is-active > a .open-iconic *,
       .button-group.segmented.warning > li > input:checked + label .open-iconic * {
-        fill: #fff;
-        stroke: #fff; }
+        fill: #000;
+        stroke: #000; }
       /* line 29, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_loaders.scss */
       .button-group.segmented.warning > li.is-active > a .sk-loader.sk-rotating-plane,
       .button-group.segmented.warning > li > input:checked + label .sk-loader.sk-rotating-plane {
-        background-color: #fff; }
+        background-color: #000; }
       /* line 35, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/2-double-bounce.scss */
       .button-group.segmented.warning > li.is-active > a .sk-loader.sk-double-bounce .sk-child,
       .button-group.segmented.warning > li > input:checked + label .sk-loader.sk-double-bounce .sk-child {
-        background-color: #fff; }
+        background-color: #000; }
       /* line 46, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/3-wave.scss */
       .button-group.segmented.warning > li.is-active > a .sk-loader.sk-wave .sk-rect,
       .button-group.segmented.warning > li > input:checked + label .sk-loader.sk-wave .sk-rect {
-        background-color: #fff; }
+        background-color: #000; }
       /* line 69, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/4-wandering-cubes.scss */
       .button-group.segmented.warning > li.is-active > a .sk-loader.sk-wandering-cubes .sk-cube,
       .button-group.segmented.warning > li > input:checked + label .sk-loader.sk-wandering-cubes .sk-cube {
-        background-color: #fff; }
+        background-color: #000; }
       /* line 33, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_loaders.scss */
       .button-group.segmented.warning > li.is-active > a .sk-loader.sk-pulse,
       .button-group.segmented.warning > li > input:checked + label .sk-loader.sk-pulse {
-        background-color: #fff; }
+        background-color: #000; }
       /* line 43, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/6-chasing-dots.scss */
       .button-group.segmented.warning > li.is-active > a .sk-loader.sk-chasing-dots .sk-child,
       .button-group.segmented.warning > li > input:checked + label .sk-loader.sk-chasing-dots .sk-child {
-        background-color: #fff; }
+        background-color: #000; }
       /* line 48, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/7-three-bounce.scss */
       .button-group.segmented.warning > li.is-active > a .sk-loader.sk-three-bounce .sk-child,
       .button-group.segmented.warning > li > input:checked + label .sk-loader.sk-three-bounce .sk-child {
-        background-color: #fff; }
+        background-color: #000; }
       /* line 45, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/8-circle.scss */
       .button-group.segmented.warning > li.is-active > a .sk-loader.sk-circle .sk-child:before,
       .button-group.segmented.warning > li > input:checked + label .sk-loader.sk-circle .sk-child:before {
-        background-color: #fff; }
+        background-color: #000; }
       /* line 42, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/9-cube-grid.scss */
       .button-group.segmented.warning > li.is-active > a .sk-loader.sk-cube-grid .sk-cube,
       .button-group.segmented.warning > li > input:checked + label .sk-loader.sk-cube-grid .sk-cube {
-        background-color: #fff; }
+        background-color: #000; }
       /* line 45, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/10-fading-circle.scss */
       .button-group.segmented.warning > li.is-active > a .sk-loader.sk-fading-circle .sk-circle:before,
       .button-group.segmented.warning > li > input:checked + label .sk-loader.sk-fading-circle .sk-circle:before {
-        background-color: #fff; }
+        background-color: #000; }
       /* line 47, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/11-folding-cube.scss */
       .button-group.segmented.warning > li.is-active > a .sk-loader.sk-folding-cube .sk-cube:before,
       .button-group.segmented.warning > li > input:checked + label .sk-loader.sk-folding-cube .sk-cube:before {
-        background-color: #fff; }
+        background-color: #000; }
       /* line 42, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/12-solid-circle.scss */
       .button-group.segmented.warning > li.is-active > a .sk-loader.sk-solid-circle .sk-child,
       .button-group.segmented.warning > li > input:checked + label .sk-loader.sk-solid-circle .sk-child {
-        border-top-color: #fff;
-        border-left-color: #fff; }
+        border-top-color: #000;
+        border-left-color: #000; }
     /* line 248, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/components/_button-group.scss */
     .button-group.segmented.alert {
       border-color: #F04124; }
@@ -4605,8 +4605,8 @@ a, [ui-sref], [ba-open], [ba-close], [ba-toggle] {
   .card.warning {
     border: 0;
     margin-bottom: 0.5rem;
-    background: #F08A24;
-    color: #fff;
+    background: #ffff4c;
+    color: #000;
     border-radius: 4px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden; }
@@ -4621,7 +4621,7 @@ a, [ui-sref], [ba-open], [ba-close], [ba-toggle] {
       width: 100%; }
     /* line 87, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/components/_card.scss */
     .card.warning .card-divider {
-      background: #f19233;
+      background: #ffff35;
       padding: 1rem; }
   /* line 80, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/components/_card.scss */
   .card.alert {
@@ -7572,8 +7572,8 @@ meter {
     stroke: #43AC6A; }
   /* line 13, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_icons.scss */
   .ionicons.warning * {
-    fill: #F08A24;
-    stroke: #F08A24; }
+    fill: #ffff4c;
+    stroke: #ffff4c; }
   /* line 13, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_icons.scss */
   .ionicons.alert * {
     fill: #F04124;
@@ -7634,8 +7634,8 @@ meter {
     stroke: #43AC6A; }
   /* line 13, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_icons.scss */
   .material-icons.warning * {
-    fill: #F08A24;
-    stroke: #F08A24; }
+    fill: #ffff4c;
+    stroke: #ffff4c; }
   /* line 13, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_icons.scss */
   .material-icons.alert * {
     fill: #F04124;
@@ -7696,8 +7696,8 @@ meter {
     stroke: #43AC6A; }
   /* line 13, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_icons.scss */
   .open-iconic.warning * {
-    fill: #F08A24;
-    stroke: #F08A24; }
+    fill: #ffff4c;
+    stroke: #ffff4c; }
   /* line 13, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_icons.scss */
   .open-iconic.alert * {
     fill: #F04124;
@@ -7756,12 +7756,12 @@ meter {
 
 /* line 13, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_icons.scss */
 .iconic-color-warning *, .iconic.iconic-color-warning *, a.iconic-color-warning > .iconic * {
-  fill: #F08A24;
-  stroke: #F08A24; }
+  fill: #ffff4c;
+  stroke: #ffff4c; }
   /* line 27, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_icons.scss */
   .iconic-color-warning *.iconic-property-accent, .iconic.iconic-color-warning *.iconic-property-accent, a.iconic-color-warning > .iconic *.iconic-property-accent {
-    fill: #F08A24;
-    stroke: #F08A24; }
+    fill: #ffff4c;
+    stroke: #ffff4c; }
 
 /* line 13, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_icons.scss */
 .iconic-color-alert *, .iconic.iconic-color-alert *, a.iconic-color-alert > .iconic * {
@@ -7845,9 +7845,9 @@ meter {
     color: #fff; }
   /* line 85, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/components/_label.scss */
   .label.warning {
-    background: #F08A24;
+    background: #ffff4c;
     border-radius: 0;
-    color: #fff; }
+    color: #000; }
   /* line 85, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/components/_label.scss */
   .label.alert {
     background: #F04124;
@@ -7900,8 +7900,8 @@ meter {
     color: #fff; }
   /* line 149, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/components/_label.scss */
   .badge.warning {
-    background: #F08A24;
-    color: #fff; }
+    background: #ffff4c;
+    color: #000; }
   /* line 149, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/components/_label.scss */
   .badge.alert {
     background: #F04124;
@@ -8505,41 +8505,41 @@ meter {
     border-left-color: #43AC6A; }
   /* line 29, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_loaders.scss */
   .sk-loader.warning.sk-rotating-plane {
-    background-color: #F08A24; }
+    background-color: #ffff4c; }
   /* line 35, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/2-double-bounce.scss */
   .sk-loader.warning.sk-double-bounce .sk-child {
-    background-color: #F08A24; }
+    background-color: #ffff4c; }
   /* line 46, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/3-wave.scss */
   .sk-loader.warning.sk-wave .sk-rect {
-    background-color: #F08A24; }
+    background-color: #ffff4c; }
   /* line 69, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/4-wandering-cubes.scss */
   .sk-loader.warning.sk-wandering-cubes .sk-cube {
-    background-color: #F08A24; }
+    background-color: #ffff4c; }
   /* line 33, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_loaders.scss */
   .sk-loader.warning.sk-pulse {
-    background-color: #F08A24; }
+    background-color: #ffff4c; }
   /* line 43, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/6-chasing-dots.scss */
   .sk-loader.warning.sk-chasing-dots .sk-child {
-    background-color: #F08A24; }
+    background-color: #ffff4c; }
   /* line 48, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/7-three-bounce.scss */
   .sk-loader.warning.sk-three-bounce .sk-child {
-    background-color: #F08A24; }
+    background-color: #ffff4c; }
   /* line 45, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/8-circle.scss */
   .sk-loader.warning.sk-circle .sk-child:before {
-    background-color: #F08A24; }
+    background-color: #ffff4c; }
   /* line 42, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/9-cube-grid.scss */
   .sk-loader.warning.sk-cube-grid .sk-cube {
-    background-color: #F08A24; }
+    background-color: #ffff4c; }
   /* line 45, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/10-fading-circle.scss */
   .sk-loader.warning.sk-fading-circle .sk-circle:before {
-    background-color: #F08A24; }
+    background-color: #ffff4c; }
   /* line 47, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/11-folding-cube.scss */
   .sk-loader.warning.sk-folding-cube .sk-cube:before {
-    background-color: #F08A24; }
+    background-color: #ffff4c; }
   /* line 42, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/vendor/spinkit/spinners/12-solid-circle.scss */
   .sk-loader.warning.sk-solid-circle .sk-child {
-    border-top-color: #F08A24;
-    border-left-color: #F08A24; }
+    border-top-color: #ffff4c;
+    border-left-color: #ffff4c; }
   /* line 29, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/helpers/_loaders.scss */
   .sk-loader.alert.sk-rotating-plane {
     background-color: #F04124; }
@@ -10773,7 +10773,7 @@ meter {
       color: white; }
   /* line 174, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/components/_notification.scss */
   .notification.warning {
-    background: #F08A24;
+    background: #ffff4c;
     padding: 1rem;
     border-radius: 4px; }
     /* line 120, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/components/_notification.scss */
@@ -10892,7 +10892,7 @@ meter {
       color: white; }
   /* line 195, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/components/_notification.scss */
   .static-notification.warning {
-    background: #F08A24;
+    background: #ffff4c;
     padding: 1rem;
     border-radius: 4px; }
     /* line 120, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/node_modules/angular-base-apps/scss/components/_notification.scss */
@@ -12101,6 +12101,14 @@ img.profile-image {
     img.profile-image {
       width: 200px;
       height: 200px; } }
+
+/* line 19, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
+textarea.profile-resume {
+  min-height: 200px; }
+  @media only screen and (min-width: 40em) {
+    /* line 19, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
+    textarea.profile-resume {
+      min-height: 300px; } }
 
 
 /*# sourceMappingURL=app.css.map*/
