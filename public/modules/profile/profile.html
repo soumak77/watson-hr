@@ -1,11 +1,26 @@
-<div class="grid-container" style="padding: 0 1rem;">
-  <h2 class="text-center">Employee Profile</h2>
-  <h4>Resume</h4>
-  <p>{{ profile.resume }}</p>
-  <a class="button" ng-click="profile.analyzeResume()">Analyze</a>
-  <h6>Analysis</h6>
-  <div>
+<div class="grid-block vertical" style="padding: 0 1rem;">
+  <div class="grid-content shrink">
+    <h2 class="text-center">Isabella Davis</h2>
     <span class="label" ng-class="taxonomy.score > 0.5 ? 'success' : 'alert'"
       ng-repeat="taxonomy in profile.resumeAnalysis.taxonomy">{{ taxonomy.label }}</span>
+  </div>
+  <div class="grid-content shrink">
+    <h4>Resume</h4>
+    <textarea ng-model="profile.resume"></textarea>
+    <a class="button" ng-click="profile.analyzeResume()">Analyze</a>
+  </div>
+  <div class="grid-block vertical">
+    <div class="grid-content shrink">
+      <h4>Personal Insights</h4>
+    </div>
+    <div class="grid-block small-up-1 medium-up-3">
+      <div class="grid-content" ng-repeat="personality in profile.resumeAnalysis.personality.children">
+        <h6>{{ personality.id | ucfirst }}</h6>
+        <div class="clearfix" ng-repeat="child in personality.children[0].children">
+          <strong class="float-left">{{ child.name }}</strong>
+          <span class="float-right">{{ child.percentage | number:2 }} %</span>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

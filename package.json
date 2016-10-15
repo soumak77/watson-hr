@@ -35,6 +35,7 @@
     "angular": "^1.5.8",
     "angular-base-apps": "^2.0.0",
     "angular-dynamic-routing": "^1.0.1",
+    "angular-filter": "^0.5.11",
     "angular-google-chart": "^0.1.0",
     "angular-resource": "^1.5.8",
     "angular-ui-router": "~0.3.1",

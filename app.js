@@ -56,12 +56,21 @@ var toneAnalyzerService = watson.tone_analyzer({
 
 // Tradeoff Analytics
 var tradeoffAnalyticsConfig = require('./config/tradeoff-analytics-config');
-
 tradeoffAnalyticsConfig.setupToken(app, {//for dev purposes. in bluemix it is taken from VCAP.
   url: process.env.TA_URL || 'https://gateway.watsonplatform.net/tradeoff-analytics/api/v1',
   username: process.env.TA_USERNAME || '1547ff63-1981-4bf8-ba14-c75d54b4b5a3',
   password: process.env.TA_PASSWORD || 'QpWTwXfvMMAy',
   version: 'v1'
+});
+
+// Personality Insights
+var personalityInsights = watson.personality_insights({
+  "password": "8AROxeTJHZCT",
+  "username": "51090438-d608-4ad2-be5d-01fbe46bb0c4",
+  "version": "v2",
+  "headers": {
+    "X-Watson-Learning-Opt-Out": 1
+  }
 });
 
 app.post('/api/:method', function(req, res, next) {
@@ -76,6 +85,15 @@ app.post('/api/:method', function(req, res, next) {
   } else {
     next({code: 404, error: 'Unknown method: ' + method });
   }
+});
+
+app.post('/personality', function(req, res, next) {
+  personalityInsights.profile(req.body, function(err, response) {
+    if (err) {
+      return next(err);
+    }
+    return res.json(response);
+  });
 });
 
 app.get('/', function(req, res) {
