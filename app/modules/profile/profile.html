@@ -6,8 +6,6 @@ controller: ProfileController as profile
 <div class="grid-block vertical" style="padding: 0 1rem;">
   <div class="grid-content shrink">
     <h2 class="text-center">Isabella Davis</h2>
-    <span class="label" ng-class="taxonomy.score > 0.5 ? 'success' : 'alert'"
-      ng-repeat="taxonomy in profile.resumeAnalysis.taxonomy">{{ taxonomy.label }}</span>
   </div>
   <div class="grid-content shrink">
     <h4>Resume</h4>
@@ -15,6 +13,16 @@ controller: ProfileController as profile
     <a class="button" ng-click="profile.analyzeResume()">Analyze</a>
   </div>
   <div class="grid-block vertical">
+    <div class="grid-content shrink">
+      <h6>Taxonomy</h6>
+      <span class="label" ng-class="taxonomy.score > 0.8 ? 'success' : (taxonomy.score > 0.5 ? 'warning' : 'alert')"
+        ng-repeat="taxonomy in profile.resumeAnalysis.taxonomy">{{ taxonomy.label }}</span>
+    </div>
+    <div class="grid-content shrink">
+      <h6>Keywords</h6>
+      <span class="label" ng-class="keyword.relevance > 0.8 ? 'success' : (keyword.relevance > 0.5 ? 'warning' : 'alert')"
+        ng-repeat="keyword in profile.resumeAnalysis.keywords">{{ keyword.text }}</span>
+    </div>
     <div class="grid-content shrink">
       <h4>Personal Insights</h4>
     </div>
