@@ -11,11 +11,6 @@ import 'angularfire';
 import firebaseconfig from './config/config-firebase';
 firebase.initializeApp(firebaseconfig);
 
-// Icon Configuration
-import 'angular-icons/dist/open-iconic';
-import 'angular-icons/dist/ionicons';
-import 'angular-icons/dist/material-icons';
-
 // Route Configuration
 import 'angular-dynamic-routing/dynamicRouting';
 import 'angular-dynamic-routing/dynamicRouting.animations';
@@ -55,11 +50,6 @@ angular.module('application', [
 
   // google charts
   'googlechart',
-
-  // icons
-  'angularIcons.openIconic',
-  'angularIcons.ionicons',
-  'angularIcons.materialIcons',
 
   // dynamic routing
   'dynamicRouting',
