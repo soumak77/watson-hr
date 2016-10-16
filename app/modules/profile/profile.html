@@ -5,8 +5,8 @@ controller: ProfileController as profile
 ---
 <div class="grid-block vertical" style="padding: 0 1rem;">
   <div class="grid-content shrink text-center">
-    <img class="profile-image" ng-src="{{ profile.imagePath }}"></img>
-    <h2>{{ profile.name }}</h2>
+    <img class="profile-image" ng-src="{{ profile.imagePath.$value }}"></img>
+    <h2>{{ profile.name.$value }}</h2>
     <span>{{ profile.resumeAnalysis.visual.images[0].faces[0].gender.gender.toLowerCase() | ucfirst }} {{ profile.resumeAnalysis.visual.images[0].faces[0].age.min }} - {{ profile.resumeAnalysis.visual.images[0].faces[0].age.max }}</span>
   </div>
   <div class="grid-content shrink" ng-if="profile.editable">

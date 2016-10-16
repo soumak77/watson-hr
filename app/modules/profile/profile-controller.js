@@ -27,9 +27,6 @@ export default class ProfileController {
             if ($firebaseAuthService.$getAuth().displayName) {
               this.name = $firebaseAuthService.$getAuth().displayName;
             }
-
-            this.dataRef.child('name').set(this.name);
-            this.dataRef.child('image').set(this.imagePath);
           }
         }
       })
@@ -42,9 +39,10 @@ export default class ProfileController {
     this.id = id;
     if (id) {
       this.dataRef = this.$firebaseRef.default.child('profiles').child(this.id);
-      this.imagePath = 'images/profiles/' + this.id + '.jpeg';
-      this.name = 'Anonymous';
       this.resumeAnalysis = this.$firebaseObject(this.dataRef.child('resume'));
+
+      this.name = this.$firebaseObject(this.dataRef.child('name'));
+      this.imagePath = this.$firebaseObject(this.dataRef.child('image'));
     }
   }
 

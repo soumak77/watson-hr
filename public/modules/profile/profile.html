@@ -1,7 +1,7 @@
 <div class="grid-block vertical" style="padding: 0 1rem;">
   <div class="grid-content shrink text-center">
-    <img class="profile-image" ng-src="{{ profile.imagePath }}"></img>
-    <h2>{{ profile.name }}</h2>
+    <img class="profile-image" ng-src="{{ profile.imagePath.$value }}"></img>
+    <h2>{{ profile.name.$value }}</h2>
     <span>{{ profile.resumeAnalysis.visual.images[0].faces[0].gender.gender.toLowerCase() | ucfirst }} {{ profile.resumeAnalysis.visual.images[0].faces[0].age.min }} - {{ profile.resumeAnalysis.visual.images[0].faces[0].age.max }}</span>
   </div>
   <div class="grid-content shrink" ng-if="profile.editable">
@@ -45,7 +45,7 @@
       <h4 class="text-center">Resume</h4>
       <pre ng-if="!profile.editable">{{ profile.resumeAnalysis.content }}</pre>
       <textarea class="profile-resume" ng-if="profile.editable" ng-model="profile.resumeAnalysis.content"></textarea>
-      <a class="button" ba-close="" ng-if="profile.editable" ng-click="profile.analyzeResume()">Save</a>
+      <a class="button" ba-close="" ng-if="profile.editable" ng-click="profile.saveResume()">Save</a>
     </div>
   </div>
 </ba-modal>

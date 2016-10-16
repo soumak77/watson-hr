@@ -1,6 +1,6 @@
 import 'firebase';
-import ApplicantController from './applicant-controller';
+import ApplicantsController from './applicants-controller';
 
-export default angular.module('application.applicant', ['firebase.database'])
-  .controller('ApplicantController', ApplicantController)
+export default angular.module('application.applicants', ['firebase.database'])
+  .controller('ApplicantsController', ApplicantsController)
   .name;

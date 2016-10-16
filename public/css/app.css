@@ -12102,15 +12102,25 @@ img.profile-image {
       width: 200px;
       height: 200px; } }
 
-/* line 19, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
+/* line 20, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
+div.profile-summary img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px; }
+
+/* line 26, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
+div.profile-summary span {
+  margin-left: 1rem; }
+
+/* line 31, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
 textarea.profile-resume {
   min-height: 200px; }
   @media only screen and (min-width: 40em) {
-    /* line 19, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
+    /* line 31, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
     textarea.profile-resume {
       min-height: 300px; } }
 
-/* line 27, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
+/* line 39, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
 div.home-container {
   background: url("/images/homepage.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -12118,43 +12128,43 @@ div.home-container {
   -o-background-size: cover;
   background-size: cover;
   width: 100%; }
-  /* line 35, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
+  /* line 47, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
   div.home-container h1 {
     color: white;
     text-align: center;
     margin: auto;
     margin-top: 1rem; }
-  /* line 42, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
+  /* line 54, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
   div.home-container h4 {
     color: white;
     text-align: center;
     margin: auto;
     margin-top: 3rem; }
-  /* line 49, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
+  /* line 61, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
   div.home-container a.button.employer {
     position: absolute;
     bottom: 10%; }
     @media only screen and (min-width: 40em) {
-      /* line 49, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
+      /* line 61, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
       div.home-container a.button.employer {
         right: 10%;
         bottom: 25%; } }
     @media only screen and (min-width: 75em) {
-      /* line 49, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
+      /* line 61, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
       div.home-container a.button.employer {
         right: 25%;
         bottom: 25%; } }
-  /* line 64, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
+  /* line 76, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
   div.home-container a.button.applicant {
     position: absolute;
     bottom: 25%; }
     @media only screen and (min-width: 40em) {
-      /* line 64, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
+      /* line 76, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
       div.home-container a.button.applicant {
         left: 10%;
         bottom: 25%; } }
     @media only screen and (min-width: 75em) {
-      /* line 64, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
+      /* line 76, /Users/brian/GitHub/alchemylanguage-nodejs/watson-human-resources/app/scss/app.scss */
       div.home-container a.button.applicant {
         left: 25%;
         bottom: 25%; } }

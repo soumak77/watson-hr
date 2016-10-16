@@ -1,7 +1,8 @@
-export default class ApplicantController {
-  constructor() {
+export default class ApplicantsController {
+  constructor($firebaseRef, $firebaseArray) {
+    this.applicants = $firebaseArray($firebaseRef.default.child('profiles'));
     return this;
   }
 }
 
-ApplicantController.$inject = [];
+ApplicantsController.$inject = ['$firebaseRef', '$firebaseArray'];

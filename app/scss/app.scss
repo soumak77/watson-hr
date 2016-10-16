@@ -16,6 +16,18 @@ img.profile-image {
   }
 }
 
+div.profile-summary {
+  img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+
+  span {
+    margin-left: 1rem;
+  }
+}
+
 textarea.profile-resume {
   min-height: 200px;
 
