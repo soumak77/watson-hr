@@ -1,6 +1,6 @@
 export default class AccountController {
   constructor($firebaseAuthService, $firebaseRef, $log, $state, $stateParams, BaseAppsApi) {
-    this.type = $stateParams.type;
+    this.type = $stateParams.type || 'applicant';
     this.authService = $firebaseAuthService;
     this.authLoading = false;
     this.$log = $log;
@@ -46,8 +46,6 @@ export default class AccountController {
         this.authLoading = true;
         return this.authService.$signInWithPopup(provider)
           .then(() => {
-            this.$firebaseRef.default.child('profiles').child(this.authService.$getAuth().uid).child('type').set(this.type);
-
             var name = 'Anonymous';
             var image = 'images/silhouette.png';
             // check if user has image from social site
@@ -57,15 +55,20 @@ export default class AccountController {
             if ($firebaseAuthService.$getAuth().displayName) {
               name = $firebaseAuthService.$getAuth().displayName;
             }
-            
-            this.$firebaseRef.default.child('profiles').child(this.authService.$getAuth().uid).child('image').set(image);
-            this.$firebaseRef.default.child('profiles').child(this.authService.$getAuth().uid).child('name').set(name);
 
-            if (this.type === 'applicant') {
-              this.$state.go('profile', {id: this.authService.$getAuth().uid});
-            } else {
-              this.$state.go('applicants');
-            }
+            this.$firebaseRef.default.child('profiles').child(this.authService.$getAuth().uid).child('type').once('value').then((val) => {
+              if (!val) {
+                this.$firebaseRef.default.child('profiles').child(this.authService.$getAuth().uid).child('type').set(this.type);
+                this.$firebaseRef.default.child('profiles').child(this.authService.$getAuth().uid).child('image').set(image);
+                this.$firebaseRef.default.child('profiles').child(this.authService.$getAuth().uid).child('name').set(name);
+              }
+
+              if (this.type === 'applicant') {
+                this.$state.go('profile', {id: this.authService.$getAuth().uid});
+              } else {
+                this.$state.go('applicants');
+              }
+            });
           })
           .catch((error) => {
             $log.log('Login Failed!', error);
