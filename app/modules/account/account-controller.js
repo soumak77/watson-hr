@@ -47,8 +47,20 @@ export default class AccountController {
         return this.authService.$signInWithPopup(provider)
           .then(() => {
             this.$firebaseRef.default.child('profiles').child(this.authService.$getAuth().uid).child('type').set(this.type);
-            this.$firebaseRef.default.child('profiles').child(this.authService.$getAuth().uid).child('image').set('images/silhouette.png');
-            this.$firebaseRef.default.child('profiles').child(this.authService.$getAuth().uid).child('name').set('Anonymous');
+
+            var name = 'Anonymous';
+            var image = 'images/silhouette.png';
+            // check if user has image from social site
+            if ($firebaseAuthService.$getAuth().photoURL) {
+              image = $firebaseAuthService.$getAuth().photoURL;
+            }
+            if ($firebaseAuthService.$getAuth().displayName) {
+              name = $firebaseAuthService.$getAuth().displayName;
+            }
+            
+            this.$firebaseRef.default.child('profiles').child(this.authService.$getAuth().uid).child('image').set(image);
+            this.$firebaseRef.default.child('profiles').child(this.authService.$getAuth().uid).child('name').set(name);
+
             if (this.type === 'applicant') {
               this.$state.go('profile', {id: this.authService.$getAuth().uid});
             } else {

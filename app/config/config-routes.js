@@ -1,3 +1,0 @@
-
-  module.exports = [{"name":"profile","url":"/profile/:id","controller":"ProfileController as profile","path":"modules/profile/profile.html"},{"name":"applicants","url":"/applicants","controller":"ApplicantsController as applicants","path":"modules/applicants/applicants.html"},{"name":"account","url":"/account/:type","controller":"AccountController as account","animationIn":"slideInLeft","animationOut":"slideOutRight","path":"modules/account/account.html"},{"name":"home","url":"/","controller":"HomeController as home","path":"modules/home/home.html"}];
-  

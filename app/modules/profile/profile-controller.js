@@ -19,15 +19,6 @@ export default class ProfileController {
           $state.go('profile', {id: $firebaseAuthService.$getAuth().uid }, { reload: true });
         } else {
           this.editable = $firebaseAuthService.$getAuth().uid === this.id;
-          if (this.editable) {
-            // check if user has image from social site
-            if ($firebaseAuthService.$getAuth().photoURL) {
-              this.imagePath = $firebaseAuthService.$getAuth().photoURL;
-            }
-            if ($firebaseAuthService.$getAuth().displayName) {
-              this.name = $firebaseAuthService.$getAuth().displayName;
-            }
-          }
         }
       })
       .catch(() => $state.go('home'));
