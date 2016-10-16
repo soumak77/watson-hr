@@ -21,6 +21,7 @@ export default class AccountController {
           .then(() => {
             this.$firebaseRef.default.child('profiles').child(this.authService.$getAuth().uid).child('type').set(this.type);
             this.$firebaseRef.default.child('profiles').child(this.authService.$getAuth().uid).child('image').set('images/silhouette.png');
+            this.$firebaseRef.default.child('profiles').child(this.authService.$getAuth().uid).child('name').set('Anonymous');
             if (this.type === 'applicant') {
               this.$state.go('profile', {id: this.authService.$getAuth().uid});
             } else {
@@ -47,6 +48,7 @@ export default class AccountController {
           .then(() => {
             this.$firebaseRef.default.child('profiles').child(this.authService.$getAuth().uid).child('type').set(this.type);
             this.$firebaseRef.default.child('profiles').child(this.authService.$getAuth().uid).child('image').set('images/silhouette.png');
+            this.$firebaseRef.default.child('profiles').child(this.authService.$getAuth().uid).child('name').set('Anonymous');
             if (this.type === 'applicant') {
               this.$state.go('profile', {id: this.authService.$getAuth().uid});
             } else {
