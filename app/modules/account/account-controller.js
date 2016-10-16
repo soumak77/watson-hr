@@ -49,11 +49,11 @@ export default class AccountController {
             var name = 'Anonymous';
             var image = 'images/silhouette.png';
             // check if user has image from social site
-            if ($firebaseAuthService.$getAuth().photoURL) {
-              image = $firebaseAuthService.$getAuth().photoURL;
+            if (this.authService.$getAuth().photoURL) {
+              image = this.authService.$getAuth().photoURL;
             }
-            if ($firebaseAuthService.$getAuth().displayName) {
-              name = $firebaseAuthService.$getAuth().displayName;
+            if (this.authService.$getAuth().displayName) {
+              name = this.authService.$getAuth().displayName;
             }
 
             this.$firebaseRef.default.child('profiles').child(this.authService.$getAuth().uid).child('type').once('value').then((val) => {
