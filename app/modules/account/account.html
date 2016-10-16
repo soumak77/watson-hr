@@ -7,7 +7,7 @@ animationOut: slideOutRight
 ---
 <ba-notification-set id="account-notifications" position="top-right"></ba-notification-set>
 <div class="grid-container" style="padding: 0 1rem;">
-  <h2>Login below</h2>
+  <h2>Account</h2>
   <div ng-show="!account.authLoading && !account.authService.$getAuth()">
     <a class="button large expand" ng-click="account.signin('anonymous')"><ba-ionicon icon="md-person"></ba-ionicon>Anonymous Login</a>
     <a class="button large expand" ng-click="account.signin('google')"><ba-ionicon icon="logo-google"></ba-ionicon>Google Login</a>

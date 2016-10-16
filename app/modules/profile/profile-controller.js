@@ -60,7 +60,7 @@ export default class ProfileController {
     }).$promise);
 
     promises.push(this.$VisualRecognitionService.save({}, {
-      url: this.imagePath
+      url: this.imagePath.$value
     }).$promise);
 
     return this.$q.all(promises).then((data) => {
